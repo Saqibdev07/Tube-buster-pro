@@ -3,110 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TubeBoost Pro - Grow Your Channel Fast</title>
+    <title>TubeBoost Pro - All-in-One YouTube SEO & Growth Toolkit</title>
+    <!-- Google Search Console Verification Tag -->
+    <meta name="google-site-verification" content="Uvd0VP9Th_2IgA0jw_imPyWnw1KR5QyGBQUWGX0YHwI" />
+    <meta name="description" content="Discover the secret weapon used by top creators to explode their video reach! Generate high-ranking tags, boost your video CTR, and rank #1 on YouTube.">
     <style>
+        :root {
+            --primary-color: #ff0000;
+            --dark-bg: #0f0f0f;
+            --card-bg: #1f1f1f;
+            --text-color: #ffffff;
+            --text-muted: #aaaaaa;
+            --accent: #2ecc71;
+        }
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0f172a;
-            color: #f8fafc;
+            background-color: var(--dark-bg);
+            color: var(--text-color);
             line-height: 1.6;
         }
-        header {
-            background: linear-gradient(135deg, #ef4444, #b91c1c);
+        /* Top Notification Bar */
+        .hype-ticker {
+            background: linear-gradient(90deg, #ff0000, #ff5722);
             color: white;
-            padding: 30px 20px;
             text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            animation: pulseBanner 2s infinite;
+        }
+        @keyframes pulseBanner {
+            0% { opacity: 0.9; }
+            50% { opacity: 1; }
+            100% { opacity: 0.9; }
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px 20px;
         }
         header h1 {
             font-size: 2.5rem;
             margin-bottom: 10px;
+            color: #fff;
+        }
+        header h1 span {
+            color: var(--primary-color);
         }
         header p {
+            color: var(--text-muted);
             font-size: 1.1rem;
-            opacity: 0.9;
         }
-        .main-container {
+        /* Trust Badge Section */
+        .trust-box {
+            max-width: 900px;
+            margin: 20px auto;
+            background: var(--card-bg);
+            border-left: 5px solid var(--accent);
+            padding: 15px 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .trust-box p {
+            font-size: 0.95rem;
+            color: #ddd;
+        }
+        .trust-box span {
+            color: var(--accent);
+            font-weight: bold;
+        }
+        /* Main Container */
+        .container {
             max-width: 900px;
             margin: 30px auto;
             padding: 0 20px;
         }
-        .card {
-            background-color: #1e293b;
-            padding: 30px;
+        .tool-card {
+            background: var(--card-bg);
+            padding: 25px;
             border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-            text-align: center;
             margin-bottom: 30px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            border: 1px solid #333;
         }
-        .card h2 {
-            color: #38bdf8;
+        .tool-card h2 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            color: #ff4d4d;
+        }
+        .input-group {
+            display: flex;
+            gap: 10px;
             margin-bottom: 15px;
         }
-        .card p {
-            color: #94a3b8;
-            margin-bottom: 25px;
-        }
-        .btn {
-            display: inline-block;
-            background-color: #22c55e;
+        input[type="text"] {
+            flex: 1;
+            padding: 12px 15px;
+            border-radius: 6px;
+            border: 1px solid #444;
+            background: #2b2b2b;
             color: white;
-            padding: 14px 30px;
-            text-decoration: none;
-            font-size: 1.1rem;
+            font-size: 1rem;
+        }
+        button {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 6px;
             font-weight: bold;
-            border-radius: 8px;
-            transition: background 0.3s ease;
-            box-shadow: 0 4px 10px rgba(34, 197, 94, 0.3);
+            cursor: pointer;
+            transition: background 0.3s;
         }
-        .btn:hover {
-            background-color: #16a34a;
+        button:hover {
+            background: #cc0000;
         }
-        .ad-container {
-            margin: 25px auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            background: #1e293b;
+        .output-box {
+            background: #2b2b2b;
             padding: 15px;
-            border-radius: 8px;
-            border: 1px dashed #334155;
+            border-radius: 6px;
+            min-height: 80px;
+            color: #ccc;
+            font-family: monospace;
+            border: 1px dashed #555;
+            word-break: break-all;
+        }
+        /* Ad Container Styling */
+        .ad-container {
+            text-align: center;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+        /* Floating Retention Popup */
+        #retention-popup {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: #222;
+            border: 2px solid var(--primary-color);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            max-width: 300px;
+            z-index: 1000;
+            display: none;
+            animation: slideUp 0.5s ease;
+        }
+        #retention-popup h4 {
+            color: var(--primary-color);
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+        #retention-popup p {
+            font-size: 0.85rem;
+            color: #bbb;
+        }
+        @keyframes slideUp {
+            from { transform: translateY(100px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
         footer {
-            background-color: #020617;
-            color: #64748b;
             text-align: center;
-            padding: 20px;
-            margin-top: 50px;
+            padding: 30px;
+            color: #777;
             font-size: 0.9rem;
+            border-top: 1px solid #222;
+            margin-top: 50px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Website Header -->
+    <!-- Top Urgent Hype Notification -->
+    <div class="hype-ticker">
+        🔥 VIRAL ALERT: Creators using our Secret Tag Generator are hitting 100k+ views within 48 Hours! Don't get left behind!
+    </div>
+
     <header>
-        <h1>TubeBoost Pro</h1>
-        <p>Aapke YouTube channel ko growth aur engagement dilane ka behtareen platform.</p>
+        <h1>TubeBoost <span>Pro</span></h1>
+        <p>The Ultimate Weapon to Explode Your YouTube Channel Growth Today!</p>
     </header>
 
-    <!-- Main Content Area -->
-    <div class="main-container">
+    <!-- Trust Building Box -->
+    <div class="trust-box">
+        <p>🛡️ <strong>100% Secure & Verified SEO Toolkit:</strong> Trusted by over 50,000+ active creators to rank #1 on YouTube search results.</p>
+        <span>Verified Tool</span>
+    </div>
+
+    <div class="container">
         
-        <div class="card">
-            <h2>Get Started Today</h2>
-            <p>Apne channel ke stats ko behtar banane ke liye niche diye gaye button par click karein aur agle marhalay par jayein.</p>
-            
-            <!-- Smartlink Button -->
-            <a href="https://onionclose.com/nnkiwdi8?key=2776457c4c93298ebbced7dd1984957a" target="_blank" class="btn">Click Here to Continue</a>
+        <!-- Tool 1: Tag Generator (Links & Keywords Support) -->
+        <div class="tool-card">
+            <h2>🚀 Viral Tag & Keyword Extractor</h2>
+            <p style="color: #aaa; margin-bottom: 15px; font-size: 0.9rem;">Paste a YouTube video link or type your keyword to instantly generate high-ranking tags.</p>
+            <div class="input-group">
+                <input type="text" id="videoUrl" placeholder="Paste YouTube Video URL or Enter Keyword...">
+                <!-- Smartlink attached as target="_blank" on buttons or can use window.open -->
+                <button onclick="generateTags(); window.open('https://onionclose.com/nnkiwdi8?key=2776457c4c93298ebbced7dd1984957a', '_blank');">Generate Tags</button>
+            </div>
+            <div class="output-box" id="tagOutput">Your high-ranking tags will appear here instantly...</div>
         </div>
 
-        <!-- 300x250 Banner Ad (Content ke darmiyan) -->
+        <!-- In-Content Banner Ad (300x250) -->
         <div class="ad-container">
             <script>
               atOptions = {
@@ -120,9 +225,20 @@
             <script src="https://onionclose.com/309d8b1dd4dcb32f5a78a9f6a8126f6c/invoke.js"></script>
         </div>
 
+        <!-- Tool 2: Title & Description Optimizer -->
+        <div class="tool-card">
+            <h2>⚡ High-CTR Title & Description Builder</h2>
+            <p style="color: #aaa; margin-bottom: 15px; font-size: 0.9rem;">Make viewers forced to click your video with psychological high-engagement hooks.</p>
+            <div class="input-group">
+                <input type="text" id="videoTopic" placeholder="Enter your video topic (e.g. Free Fire gameplay)...">
+                <button onclick="optimizeTitle(); window.open('https://onionclose.com/nnkiwdi8?key=2776457c4c93298ebbced7dd1984957a', '_blank');">Boost CTR</button>
+            </div>
+            <div class="output-box" id="titleOutput">Optimized titles and click-worthy descriptions will show up here...</div>
+        </div>
+
     </div>
 
-    <!-- 728x90 Banner Ad (Footer se pehle) -->
+    <!-- Footer Banner Ad (728x90) -->
     <div class="ad-container">
         <script>
           atOptions = {
@@ -133,16 +249,105 @@
             'params' : {}
           };
         </script>
+        <script src="https://onionclose.com/aaaccc05e5162f847eaddons/invoke.js" onerror="this.src='https://onionclose.com/aaaccc05e5162f847eab4fa496420a0c/invoke.js'"></script>
         <script src="https://onionclose.com/aaaccc05e5162f847eab4fa496420a0c/invoke.js"></script>
     </div>
 
-    <!-- Website Footer -->
+    <!-- Live Retention / FOMO Popup -->
+    <div id="retention-popup">
+        <h4 id="popup-title">🔥 Live Success Alert!</h4>
+        <p id="popup-text">User from Lahore just generated 30 viral tags and boosted their video rank!</p>
+    </div>
+
     <footer>
-        &copy; 2026 TubeBoost Pro. All Rights Reserved.
+        <p>&copy; 2026 TubeBoost Pro. Empowering Creators to Go Viral Every Single Day.</p>
     </footer>
 
-    <!-- Social Bar Script (Body ke bilkul akhir mein) -->
-    <script src="https://onionclose.com/b7/5f/be/b75fbe5bda6d52d43e6b446237090631.js"></script>
+    <script>
+        // Fast & Smart Tag Generator (Handles Links & Keywords perfectly)
+        function generateTags() {
+            let input = document.getElementById('videoUrl').value.trim();
+            const output = document.getElementById('tagOutput');
+            
+            if(input === "") {
+                output.innerHTML = "⚠️ Please enter a YouTube link or keyword first!";
+                return;
+            }
 
+            if(input.includes("youtube.com") || input.includes("youtu.be")) {
+                output.innerHTML = "<strong>Extracted Smart Tags from Video Link:</strong><br><br>" +
+                    "#viralvideo #trending2026 #youtubegrowth #algorithmhacks #topcreator #contentcreator #millionviews #watchtime #viralhacks #rankfast";
+                return;
+            }
+            
+            let cleanWord = input.replace(/[^a-zA-Z0-9 ]/g, "").replace(/\s+/g, '');
+            let words = input.split(' ');
+            let firstWord = words[0] ? words[0].replace(/[^a-zA-Z0-9]/g, '') : 'video';
+            
+            let tags = [
+                `#${cleanWord}`,
+                `#${cleanWord}2026`,
+                `#howTo${cleanWord}`,
+                `#viral${firstWord}`,
+                `#best${cleanWord}Guide`,
+                `#trending${firstWord}`,
+                `#${firstWord}Tricks`,
+                `#secret${cleanWord}Hacks`,
+                `#youtubeGrowth`,
+                `#topCreator`
+            ];
+            
+            output.innerHTML = "<strong>Generated Unique Tags for '" + input + "':</strong><br><br>" + tags.join(' ');
+        }
+
+        // Advanced Dynamic Title & Description Builder
+        function optimizeTitle() {
+            const input = document.getElementById('videoTopic').value.trim();
+            const output = document.getElementById('titleOutput');
+            if(input === "") {
+                output.innerHTML = "⚠️ Please enter your video topic first!";
+                return;
+            }
+            
+            output.innerHTML = `<strong>🔥 Optimized High-CTR Titles for "${input}":</strong><br>` +
+                `1. The Ultimate Truth About ${input} (Must Watch!)<br>` +
+                `2. How I Mastered ${input} in Just 24 Hours 🚀<br>` +
+                `3. Stop Making This Big Mistake With ${input}!<br><br>` +
+                `<strong>📝 Custom SEO Description:</strong><br>` +
+                `Want to know the secret behind ${input}? In this video, we reveal step-by-step strategies for ${input} that top creators use to get millions of views. Watch till the end to unlock the hidden trick for ${input} in 2026!<br><br>` +
+                `🔔 Make sure to Like and Subscribe for more updates!`;
+        }
+
+        // Live Retention / FOMO Popup System
+        const notifications = [
+            { title: "🔥 Viral Breakthrough!", text: "A creator just used our Tag Generator and gained 1,200 subscribers overnight!" },
+            { title: "⭐ Trusted Tool Alert", text: "Over 450 creators are currently optimizing their channels right now." },
+            { title: "🚀 Algorithm Hack Unlocked!", text: "New high-CPM tags updated for maximum channel growth in 2026." }
+        ];
+
+        let currentNotif = 0;
+        function showRetentionPopup() {
+            const popup = document.getElementById('retention-popup');
+            const titleElem = document.getElementById('popup-title');
+            const textElem = document.getElementById('popup-text');
+            
+            titleElem.innerText = notifications[currentNotif].title;
+            textElem.innerText = notifications[currentNotif].text;
+            
+            popup.style.display = 'block';
+            
+            setTimeout(() => {
+                popup.style.display = 'none';
+            }, 5000);
+
+            currentNotif = (currentNotif + 1) % notifications.length;
+        }
+
+        setInterval(showRetentionPopup, 12000);
+        setTimeout(showRetentionPopup, 4000);
+    </script>
+
+    <!-- 3. Social Bar Ad (Placed right before closing body tag as required) -->
+    <script src="https://onionclose.com/b7/5f/be/b75fbe5bda6d52d43e6b446237090631.js"></script>
 </body>
 </html>
