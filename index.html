@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TubeBoost Pro - All-in-One YouTube SEO & Growth Toolkit</title>
+    <style>
+        :root {
+            --primary-color: #ff0000;
+            --dark-bg: #0f0f0f;
+            --card-bg: #1f1f1f;
+            --text-color: #ffffff;
+            --text-muted: #aaaaaa;
+            --accent: #2ecc71;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        /* Top Notification Bar */
+        .hype-ticker {
+            background: linear-gradient(90deg, #ff0000, #ff5722);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            animation: pulseBanner 2s infinite;
+        }
+        @keyframes pulseBanner {
+            0% { opacity: 0.9; }
+            50% { opacity: 1; }
+            100% { opacity: 0.9; }
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px 20px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        header h1 span {
+            color: var(--primary-color);
+        }
+        header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+        /* Trust Badge Section */
+        .trust-box {
+            max-width: 800px;
+            margin: 20px auto;
+            background: var(--card-bg);
+            border-left: 5px solid var(--accent);
+            padding: 15px 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .trust-box p {
+            font-size: 0.95krem;
+            color: #ddd;
+        }
+        .trust-box span {
+            color: var(--accent);
+            font-weight: bold;
+        }
+        /* Main Container */
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .tool-card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            border: 1px solid #333;
+        }
+        .tool-card h2 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            color: #ff4d4d;
+        }
+        .input-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        input[type="text"] {
+            flex: 1;
+            padding: 12px 15px;
+            border-radius: 6px;
+            border: 1px solid #444;
+            background: #2b2b2b;
+            color: white;
+            font-size: 1rem;
+        }
+        button {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #cc0000;
+        }
+        .output-box {
+            background: #2b2b2b;
+            padding: 15px;
+            border-radius: 6px;
+            min-height: 80px;
+            color: #ccc;
+            font-family: monospace;
+            border: 1px dashed #555;
+        }
+        /* Floating Retention Popup */
+        #retention-popup {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: #222;
+            border: 2px solid var(--primary-color);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            max-width: 300px;
+            z-index: 1000;
+            display: none;
+            animation: slideUp 0.5s ease;
+        }
+        #retention-popup h4 {
+            color: var(--primary-color);
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+        #retention-popup p {
+            font-size: 0.85rem;
+            color: #bbb;
+        }
+        @keyframes slideUp {
+            from { transform: translateY(100px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #777;
+            font-size: 0.9rem;
+            border-top: 1px solid #222;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Urgent Hype Notification -->
+    <div class="hype-ticker">
+        🔥 VIRAL ALERT: Creators using our Secret Tag Generator are hitting 100k+ views within 48 Hours! Don't get left behind!
+    </div>
+
+    <header>
+        <h1>TubeBoost <span>Pro</span></h1>
+        <p>The Ultimate Weapon to Explode Your YouTube Channel Growth Today!</p>
+    </header>
+
+    <!-- Trust Building Box -->
+    <div class="trust-box">
+        <p>🛡️ <strong>100% Secure & Verified SEO Toolkit:</strong> Trusted by over 50,000+ active creators to rank #1 on YouTube search results.</p>
+        <span>Verified Tool</span>
+    </div>
+
+    <div class="container">
+        
+        <!-- Tool 1: Tag Generator -->
+        <div class="tool-card">
+            <h2>🚀 Viral Tag & Keyword Extractor</h2>
+            <p style="color: #aaa; margin-bottom: 15px; font-size: 0.9rem;">Turn your average video into a viral machine by stealing top-ranking competitor tags instantly.</p>
+            <div class="input-group">
+                <input type="text" id="videoUrl" placeholder="Paste YouTube Video URL or Enter Keyword (e.g. Free Fire gameplay)...">
+                <button onclick="generateTags()">Generate Tags</button>
+            </div>
+            <div class="output-box" id="tagOutput">Your high-ranking tags will appear here automatically...</div>
+        </div>
+
+        <!-- Tool 2: Title & Description Optimizer -->
+        <div class="tool-card">
+            <h2>⚡ High-CTR Title & Description Builder</h2>
+            <p style="color: #aaa; margin-bottom: 15px; font-size: 0.9rem;">Make viewers forced to click your thumbnail with psychological high-engagement hooks.</p>
+            <div class="input-group">
+                <input type="text" id="videoTopic" placeholder="Enter your video topic (e.g. How to get M4A1 skin)...">
+                <button onclick="optimizeTitle()">Boost CTR</button>
+            </div>
+            <div class="output-box" id="titleOutput">Optimized titles and click-worthy descriptions will show up here...</div>
+        </div>
+
+    </div>
+
+    <!-- Live Retention / FOMO Popup -->
+    <div id="retention-popup">
+        <h4 id="popup-title">🔥 Live Success Alert!</h4>
+        <p id="popup-text">User from Lahore just generated 30 viral tags and boosted their video rank!</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 TubeBoost Pro. Empowering Creators to Go Viral Every Single Day.</p>
+    </footer>
+
+    <script>
+        // Simple Dummy Functions for Tools to feel interactive
+        function generateTags() {
+            const input = document.getElementById('videoUrl').value;
+            const output = document.getElementById('tagOutput');
+            if(input.trim() === "") {
+                output.innerHTML = "⚠️ Please enter a valid keyword or URL first!";
+                return;
+            }
+            output.innerHTML = "Generating top viral tags...<br><br>#viralvideo #trending2026 #youtubeseo #gaminggrowth #topcreator #" + input.replace(/\s+/g, '').toLowerCase() + " #algorithmhacks #1millionviews";
+        }
+
+        function optimizeTitle() {
+            const input = document.getElementById('videoTopic').value;
+            const output = document.getElementById('titleOutput');
+            if(input.trim() === "") {
+                output.innerHTML = "⚠️ Please enter your video topic first!";
+                return;
+            }
+            output.innerHTML = "<strong>Top Optimized Titles:</strong><br>1. Why Everyone is Failing at " + input + " (Do This Instead!)<br>2. The Secret Trick to Master " + input + " in 2026 🚀<br><br><strong>Pro Description:</strong> In this video, we reveal the ultimate shortcut for " + input + ". Watch till the end to unlock the hidden bonus!";
+        }
+
+        // Fake Live Notification Trigger to keep users engaged and build trust
+        const notifications = [
+            { title: "🔥 Viral Breakthrough!", text: "A creator just used our Tag Generator and gained 1,200 subscribers overnight!" },
+            { title: "⭐ Trusted Tool Alert", text: "Over 450 creators are currently optimizing their channels right now." },
+            { title: "🚀 Algorithm Hack Unlocked!", text: "New high-CPM tags updated for maximum channel growth in 2026." }
+        ];
+
+        let currentNotif = 0;
+        function showRetentionPopup() {
+            const popup = document.getElementById('retention-popup');
+            const titleElem = document.getElementById('popup-title');
+            const textElem = document.getElementById('popup-text');
+            
+            titleElem.innerText = notifications[currentNotif].title;
+            textElem.innerText = notifications[currentNotif].text;
+            
+            popup.style.display = 'block';
+            
+            setTimeout(() => {
+                popup.style.display = 'none';
+            }, 5000); // Hide after 5 seconds
+
+            currentNotif = (currentNotif + 1) % notifications.length;
+        }
+
+        // Show popup every 12 seconds to make the site feel alive
+        setInterval(showRetentionPopup, 12000);
+        setTimeout(showRetentionPopup, 4000); // First popup after 4 seconds
+    </script>
+</body>
+  </html>
+
